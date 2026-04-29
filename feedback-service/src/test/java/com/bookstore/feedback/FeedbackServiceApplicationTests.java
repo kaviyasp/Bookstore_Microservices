@@ -1,10 +1,10 @@
-package com.bookstore.eureka;
+package com.bookstore.feedback;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
 
 @SpringBootTest
-class EurekaServerApplicationTests {
+class FeedbackServiceApplicationTests {
 
 	@Test
 	void contextLoads() {
