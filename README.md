@@ -11,6 +11,7 @@ A full-stack **Bookstore E-Commerce backend** built with **Java 25**, **Spring B
 ---
 
 ## 🏗️ Architecture Overview
+```
 Client → API Gateway (8080)
 ├── User Service (8081)
 ├── Admin Service (8082)
@@ -24,6 +25,7 @@ Client → API Gateway (8080)
 Infrastructure:
 Eureka Server (8761) — Service Discovery
 Config Server (8888) — Centralized Configuration
+```
 
 ---
 
@@ -203,6 +205,7 @@ PENDING → CONFIRMED → PROCESSING → SHIPPED → DELIVERED
 ---
 
 ## 🏛️ Project Structure
+```
 bookstore-microservices/
 ├── eureka-server/
 ├── config-server/
@@ -224,6 +227,7 @@ bookstore-microservices/
 ├── feedback-service/
 ├── notification-service/
 └── docker-compose.yml
+```
 
 ---
 
