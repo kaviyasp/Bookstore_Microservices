@@ -1,4 +1,4 @@
-# 📚 Bookstore E-Commerce — Microservices Architecture
+# Bookstore E-Commerce — Microservices Architecture
 
 A full-stack **Bookstore E-Commerce backend** built with **Java 25**, **Spring Boot 4.x**, and **Spring Cloud**, decomposed into **12 independent microservices**. Each service owns its own database, exposes RESTful APIs, and communicates over HTTP (synchronous via Feign) or Kafka (asynchronous events).
 
@@ -10,7 +10,7 @@ A full-stack **Bookstore E-Commerce backend** built with **Java 25**, **Spring B
 
 ---
 
-## 🏗️ Architecture Overview
+## Architecture Overview
 ```
 Client → API Gateway (8080)
 ├── User Service (8081)
@@ -29,7 +29,7 @@ Config Server (8888) — Centralized Configuration
 
 ---
 
-## 🛠️ Tech Stack
+## Tech Stack
 
 | Component | Technology |
 |---|---|
@@ -47,7 +47,7 @@ Config Server (8888) — Centralized Configuration
 
 ---
 
-## 📦 Microservices
+## Microservices
 
 | # | Service | Port | Database | Responsibility |
 |---|---|---|---|---|
@@ -66,7 +66,7 @@ Config Server (8888) — Centralized Configuration
 
 ---
 
-## 🔐 Security
+## Security
 
 - **JWT-based stateless authentication** — tokens issued by User Service
 - **Role-Based Access Control (RBAC)** — `GUEST`, `USER`, `ADMIN`, `SUPER_ADMIN`
@@ -83,7 +83,7 @@ JWT claims (userId, role) forwarded to services as headers
 
 ---
 
-## 📡 Inter-Service Communication
+## Inter-Service Communication
 
 ### Synchronous (OpenFeign)
 Used when a real-time response is needed — e.g., Cart → Product Service to validate stock.
@@ -99,7 +99,7 @@ Used when a real-time response is needed — e.g., Cart → Product Service to v
 
 ---
 
-## 🗄️ Database Design
+## Database Design
 
 Each microservice owns its own **PostgreSQL schema** — no shared tables. Cross-service data is composed at the application layer via API calls.
 
@@ -116,7 +116,7 @@ Each microservice owns its own **PostgreSQL schema** — no shared tables. Cross
 
 ---
 
-## 🚀 Getting Started
+## Getting Started
 
 ### Prerequisites
 - Java 25
@@ -125,7 +125,7 @@ Each microservice owns its own **PostgreSQL schema** — no shared tables. Cross
 
 ### 1. Clone the repository
 ```bash
-git clone https://github.com/your-username/bookstore-microservices.git
+git clone https://github.com/kaviyasp/bookstore-microservices.git
 cd bookstore-microservices
 ```
 
@@ -150,11 +150,11 @@ Notification Service → http://localhost:8089
 API Gateway       → http://localhost:8080
 
 
-> ⚠️ Add VM option `-Duser.timezone=Asia/Kolkata` to each IntelliJ Run Configuration
+> Add VM option `-Duser.timezone=Asia/Kolkata` to each IntelliJ Run Configuration
 
 ---
 
-## 📖 API Documentation
+## API Documentation
 
 Each service exposes Swagger UI at:
 http://localhost:{PORT}/swagger-ui/index.html
@@ -171,7 +171,7 @@ http://localhost:{PORT}/swagger-ui/index.html
 
 ---
 
-## 🔑 Key API Endpoints
+## Key API Endpoints
 
 ### User Service
 | Method | Endpoint | Auth | Description |
@@ -204,7 +204,7 @@ PENDING → CONFIRMED → PROCESSING → SHIPPED → DELIVERED
 
 ---
 
-## 🏛️ Project Structure
+## Project Structure
 ```
 bookstore-microservices/
 ├── eureka-server/
@@ -231,7 +231,7 @@ bookstore-microservices/
 
 ---
 
-## ✅ Key Design Principles
+## Key Design Principles
 
 | Principle | Implementation |
 |---|---|
@@ -245,6 +245,6 @@ bookstore-microservices/
 
 ---
 
-## 👨‍💻 Author
+## Author
 
 Built as a full microservices learning project covering Spring Boot, Spring Cloud, JWT security, Kafka messaging, Docker, and PostgreSQL.
