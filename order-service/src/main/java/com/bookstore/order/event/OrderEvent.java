@@ -1,4 +1,4 @@
-package com.bookstore.notification.event;
+package com.bookstore.order.event;
 
 import lombok.*;
 import java.time.LocalDateTime;
