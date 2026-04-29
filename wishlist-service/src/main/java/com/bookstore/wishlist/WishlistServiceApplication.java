@@ -1,15 +1,13 @@
-package com.bookstore.user;
+package com.bookstore.wishlist;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class UserServiceApplication {
+public class WishlistServiceApplication {
 
 	public static void main(String[] args) {
-		SpringApplication.run(UserServiceApplication.class, args);
+		SpringApplication.run(WishlistServiceApplication.class, args);
 	}
-
-
 
 }

@@ -1,10 +1,10 @@
-package com.bookstore.user;
+package com.bookstore.wishlist;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
 
 @SpringBootTest
-class UserServiceApplicationTests {
+class WishlistServiceApplicationTests {
 
 	@Test
 	void contextLoads() {
