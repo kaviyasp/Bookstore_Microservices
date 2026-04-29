@@ -1,10 +1,10 @@
-package com.bookstore.config;
+package com.bookstore.customer;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
 
 @SpringBootTest
-class ConfigServerApplicationTests {
+class CustomerDetailsServiceApplicationTests {
 
 	@Test
 	void contextLoads() {
